@@ -3,17 +3,17 @@ public class ExC {
 	public static void main(String[]args) {
 		int a[]=new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		for(int i=0; i<10; i++) {
-			int primo=0;
-			for(int aux=1; aux<=a[i]; aux++) {
-				if(a[i]%aux==0) {
-					primo++;
+			int p=0;
+			for(int count=1; count<=a[i]; count++) {
+				if(a[i]%count==0) {
+					p++;
 				}
 			}
-			if(primo!=2) {
-				System.out.println(a[i]+" nao eh primo");
+			if(p!=2) {
+				System.out.println(a[i]+" não é primo");
 			}
 			else {
-				System.out.println(a[i]+" eh primo");
+				System.out.println(a[i]+" é primo");
 			}
 		}
 	}
