@@ -5,28 +5,28 @@ public class ExO {
 		int a[]=new int[10];
 		int b[]=new int[10];
 		int c[]=new int[10];
-		int i, j, aux;
+		int i, j, count;
 		for(i=0; i<10; i++) {
 			System.out.println("Digite o "+(i+1)+"� n�mero:");
 			a[i]=ler.nextInt();
 		}
 		for(i=0; i<10; i++) {
-			aux=0;
+			count=0;
 			for(j=0; j<10; j++) {
 				if(a[i]>a[j]) {
-					aux++;
+					count++;
 				}
 			}
-			b[aux]=a[i];
+			b[count]=a[i];
 		}
 		for(i=0; i<10; i++) {
-			aux=0;
+			count=0;
 			for(j=0; j<10; j++) {
 				if(a[i]<a[j]) {
-					aux++;
+					count++;
 				}
 			}
-			c[aux]=a[i];
+			c[count]=a[i];
 		}
 		for(i=0; i<10; i++) {
 			System.out.print(b[i]+" ");
