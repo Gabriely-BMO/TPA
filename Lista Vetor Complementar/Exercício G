@@ -3,18 +3,18 @@ public class ExG {
 	public static void main(String[] args) {
 		int a[]=new int[15];
 		int b[]=new int[15];
-		int aux, fat=0, i=0, j=0;
-		aux=fat;
+		int count, fat=0, i=0, j=0;
+	        count=fat;
 		for(i=0; i<15; i++) {
 			a[i]=i;
 		}
 		for(j=0; j<15; j++) {
 			fat=a[j];
-			aux=fat;
+			count=fat;
 			fat=1;
-			while(aux>1) {
-				fat=fat*aux;
-				aux--;
+			while(count>1) {
+				fat=fat*count;
+				count--;
 			}
 			b[j]=fat;
 		}
